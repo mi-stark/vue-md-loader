@@ -1,0 +1,26 @@
+{
+  "name": "@mistark/vue-md-loader",
+  "version": "0.1.0",
+  "description": "A loader for webpack that compiles markdown documents into vue components",
+  "main": "src/index.js",
+  "scripts": {},
+  "author": "Aaron",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mi-stark/vue-md-loader"
+  },
+  "homepage": "https://github.com/mi-stark/vue-md-loader",
+  "keywords": [
+    "markdown",
+    "markdown-loader",
+    "vue",
+    "webpack"
+  ],
+  "dependencies": {
+    "deepmerge": "^4.2.2",
+    "markdown-it": "^12.2.0",
+    "md5": "^2.3.0"
+  },
+  "devDependencies": {}
+}
