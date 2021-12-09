@@ -2,11 +2,14 @@
 A Webpack loader that compiles markdown document into Vue component.  
 Languages: [English](https://github.com/mi-stark/vue-md-loader) | [简体中文](./readme_zh-CN.md)
 
-## Getting Started
+## Installation
 
+Install via npm:
 ```console
 npm install @mistark/vue-md-loader --save-dev
 ```
+
+Usage with webpack.config  
 
 **webpack.config.js**
 
@@ -22,6 +25,7 @@ module.exports = {
     },
 };
 ```
+
 Disable eslint's verification of markdown documents
 
 **.eslintignore**
@@ -30,6 +34,23 @@ Disable eslint's verification of markdown documents
 **/*.md
 ```
 
+## Usage
+You can require markdown file like this:
+
+```vue
+<template>
+  <div>
+    <div>The content of the document is as follows：</div>
+    <markdown-doc/>
+  </div>
+</template>
+<script>
+import MarkdownDoc from './markdown-doc.md'
+export default {
+  components: {MarkdownDoc}
+}
+</script>
+```
 
 ## Config
 

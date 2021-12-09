@@ -2,11 +2,13 @@
 一个将 markdown 文档编译成 Vue 组件的 Webpack 加载器.  
 语言: [English](https://github.com/mi-stark/vue-md-loader) | [简体中文](./readme_zh-CN.md)
 
-## 开始
-
+## 安装
+使用npm安装
 ```console
 npm install @mistark/vue-md-loader --save-dev
 ```
+
+在webpack配置文件添加对应的loader规则  
 
 **webpack.config.js**
 
@@ -28,6 +30,23 @@ module.exports = {
 
 ```console
 **/*.md
+```
+
+## 用法
+你可以参考以下示例来引用markdown文件：
+```vue
+<template>
+  <div>
+    <div>The content of the document is as follows：</div>
+    <markdown-doc/>
+  </div>
+</template>
+<script>
+import MarkdownDoc from './markdown-doc.md'
+export default {
+  components: {MarkdownDoc}
+}
+</script>
 ```
 
 ## 配置
