@@ -1,6 +1,6 @@
 {
   "name": "@mistark/vue-md-loader",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A loader for webpack that compiles markdown documents into vue components",
   "main": "src/index.js",
   "scripts": {},
